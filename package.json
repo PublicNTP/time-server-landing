@@ -1,0 +1,18 @@
+{
+  "name": "base-landing-page",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch-sass": "node-sass --watch assets/scss -o assets/css",
+    "watch-html": "http-server",
+    "watch": "npm run watch-html & npm run watch-sass"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "http-server": "^0.11.1",
+    "node-sass": "^4.9.3"
+  }
+}
