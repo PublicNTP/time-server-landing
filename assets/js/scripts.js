@@ -19,4 +19,3 @@ $(document).ready(function(){
 });
 
 elmnt = document.getElementById("features");
-scrollTo(document.documentElement, elmnt.offsetTop, 600);
