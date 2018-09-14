@@ -10,12 +10,24 @@
     crossorigin="anonymous">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="shortcut icon" type="image/png" href="./assets/img/favicon.png">
+  <link rel="icon" type="image/x-icon" href="./assets/img/favicon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="150x150" href="./assets/img/mstile-150x150.png">
+  <link rel="manifest" href="./assets/img/site.webmanifest">
+  <link rel="icon" type="image/png" sizes="192x192" href="./assets/img/android-chrome-192x192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="./assets/img/android-chrome-512x512.png">
+  <link rel="mask-icon" href="./assets/img/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#2d89ef">
+  <meta name="theme-color" content="#ffffff">
 </head>
 
 <body>
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <a class="navbar-brand" href="#">
-      <img src="assets/img/logo.svg" width="30" height="30" class="d-inline-block align-top" alt=""> TIMESERVER
+      <img src="assets/img/safari-pinned-tab.svg" width="30" height="30" class="d-inline-block align-top" alt=""> PublicNTP
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
       aria-expanded="false" aria-label="Toggle navigation">
@@ -24,14 +36,11 @@
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="nav navbar-nav ml-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="#">Home</a>
+        <li class="nav-item nav-item--github">
+          <a class="nav-link" href="https://github.com/PublicNTP/time-server-app#readme" target="_blank"><img src="assets/img/GitHub-Mark-120px-plus.png"></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">The App</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Features</a>
+          <a class="nav-link nav-link--features" href="#features">Features</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Download Now</a>
@@ -51,7 +60,9 @@
 
     <div class="half">
       <div class="phone d-flex justify-content-center">
-        <div class="phone__image"></div>
+        <div class="phone__image">
+          <img src="assets/img/pntp_app_mockup.png">
+        </div>
       </div>
     </div>
   </section>
@@ -65,7 +76,7 @@
     </div>
   </section>
 
-  <section class="features d-block d-md-flex flex-column">
+  <section id="features" class="features d-block d-md-flex flex-column">
     <h1 class="features__title">Features</h1>
     <div class="d-block d-md-flex justify-content-between">
       <div class="features__wrapper d-flex flex-column align-items-center">

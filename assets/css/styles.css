@@ -11,6 +11,9 @@ section {
   position: relative;
   padding: 30px; }
 
+.nav-item--github img {
+  width: 30px; }
+
 .half {
   width: 50%;
   max-width: 400px; }
@@ -27,9 +30,9 @@ section {
   .phone__image {
     width: 200px;
     height: 400px;
-    background-color: #989898;
-    border-radius: 20px;
     z-index: 1; }
+    .phone__image img {
+      width: 100%; }
 
 .cta {
   background-color: #CBCBCB;
@@ -164,3 +167,5 @@ section {
 
 .fa {
   color: white; }
+
+/*# sourceMappingURL=styles.css.map */

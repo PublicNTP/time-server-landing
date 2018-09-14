@@ -18,6 +18,16 @@ section {
   padding: 30px;
 }
 
+.nav {
+  &-item {
+    &--github {
+      img {
+        width: 30px;
+      }
+    }
+  }
+}
+
 .half {
   width: 50%;
   max-width: 400px;
@@ -39,9 +49,10 @@ section {
   &__image {
     width: 200px;
     height: 400px;
-    background-color: $darker-gray;
-    border-radius: 20px;
     z-index: 1;
+    img {
+      width: 100%;
+    }
   }
 }
 
@@ -92,7 +103,7 @@ section {
   &__box {
     max-width: 250px;
   }
-  
+
   &__headline {
     font-size: 16px;
     font-weight: normal;
