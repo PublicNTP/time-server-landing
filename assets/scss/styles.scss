@@ -1,9 +1,19 @@
 @import 'variables';
 
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+
 // Bootstrap Overrides
 .navbar-expand-lg .navbar-nav .nav-link {
     padding-right: 1rem;
     padding-left: 1rem;
+}
+
+.navbar-toggler-icon {
+  background-image: url('/assets/img/menu-icon.svg') !important;
+  width: 40px;
+  height: 20px;
 }
 
 // Defaults
@@ -19,12 +29,34 @@ section {
 }
 
 .nav {
+
+  &__white {
+    background-color: white;
+    padding: 40px;
+  }
+
+  &__mobile {
+    border-color: transparent !important;
+    background-color: transparent;
+    border: 0;
+    display: none;
+
+    @media (max-width: 990px) {
+      display: block;
+    }
+  }
+
   &-item {
     &--github {
       img {
         width: 30px;
       }
     }
+  }
+
+  &-link {
+    font-size: 12px;
+    text-transform: uppercase;
   }
 }
 
@@ -48,8 +80,12 @@ section {
 
   &__image {
     width: 200px;
-    height: 400px;
     z-index: 1;
+
+    @media (max-width: 700px) {
+      width: unset;
+    }
+
     img {
       width: 100%;
     }
@@ -57,21 +93,54 @@ section {
 }
 
 .cta {
-  background-color: $medium-gray;
+  background-color: white;
   padding-left: 140px;
-  // padding-top: 50px;
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+
+  &__globe {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+
+    @media (max-width: 700px) {
+      top: 300px;
+      left: -100px;
+    }
+  }
+
+  &__poly {
+    position: absolute;
+    top: 38px;
+    right: 10%;
+    bottom: 0;
+    left: 17px;
+    z-index: -1;
+
+    @media (max-width: 700px) {
+      top: 300px;
+      left: -100px;
+    }
+  }
 
   @media (max-width: $md) {
     padding: $gutter;
   }
 
   &__headline {
-    font-size: 40px;
-    font-weight: 100;
+    color: $gray-title;
+    font-size: 60px;
+    line-height: 60px;
+    font-weight: 500;
     margin-bottom: $spacer;
   }
 
   &__text {
+    color: $gray-text;
     font-size: 14px;
     margin-bottom: $spacer;
     width: 85%;
@@ -79,15 +148,15 @@ section {
   }
 
   &__btn {
-    color: $darker-gray;
-    padding: 10px 20px;
-    background-color: $light-gray;
-    font-size: 19px;
+    color: white;
+    padding: 10px 25px;
+    background-color: $gray-text;
     text-transform: uppercase;
-    text-align: center;
+    // text-align: center;
     max-width: 200px;
     font-size: 14px;
     cursor: pointer;
+    border-radius: 4px;
 
     @media (max-width: $md) {
       margin: 0 auto;
@@ -96,22 +165,50 @@ section {
 }
 
 .info {
-  background-color: $dark-gray;
+  background-color: transparent;
   padding-top: 200px;
   padding-right: 100px;
+  position: relative;
+  z-index: 0;
+
+  &__overlay {
+    position: absolute;
+    top: 290px;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+
+      @media (max-width: 770px) {
+        height: 100%;
+        width: unset;
+      }
+    }
+  }
+
+  &__wrapper {
+    max-width: 500px;
+    margin-top: 130px;
+  }
 
   &__box {
     max-width: 250px;
   }
 
   &__headline {
-    font-size: 16px;
-    font-weight: normal;
+    color: $gray-text;
+    font-size: 18px;
+    font-weight: bold;
     margin-bottom: $gutter;
   }
 
   &__text {
-    font-size: 10px;
+    color: $gray-text;
+    font-size: 14px;
     margin-bottom: $gutter;
   }
 
@@ -122,8 +219,18 @@ section {
 }
 
 .features {
-  background-color: $light-gray;
+  background-color: white;
   padding-top: 25px;
+  position: relative;
+
+  &__bar {
+    position: absolute;
+    height: 135px;
+    background-color: rgba(#ACCCE1, .5);
+    top: 0;
+    left: 0;
+    right: 0;
+  }
 
   &__title {
     font-size: 20px;
@@ -151,13 +258,18 @@ section {
   }
 
   &__text {
-    font-size: 10px;
+    color: $gray-text;
+    font-size: 14px;
     margin-bottom: $gutter;
+    text-align: center;
   }
 }
 
 .download {
   background-color: $medium-gray;
+  background-image: url('/assets/img/footer.png');
+  background-repeat: no-repeat;
+  background-size: cover;
 
   &__title {
     font-size: 20px;
@@ -169,8 +281,12 @@ section {
   }
 
   &__wrapper {
-    margin: 0 auto;
-    margin-bottom: 150px;
+    margin: 50px auto;
+
+    @media (max-width: $md) {
+      margin: 0px auto;
+      margin-bottom: 10px;
+    }
   }
 
   &__btn {
@@ -193,16 +309,24 @@ section {
 }
 
 .footer {
-  background-color: $darkest-gray;
+  background-color: transparent; //$darkest-gray;
   padding: 15px $spacer;
-  padding-bottom: 35px;
+  // padding-bottom: 35px;
 
   &__logo {
-    width: 150px;
+    width: 300px;
 
     @media (max-width: $md) {
       margin: 0 auto;
       margin-bottom: 15px;
+      width: 220px;
+    }
+
+    img {
+      width: 100%;
+      @media (max-width: $md) {
+        width: 300px;
+      }
     }
   }
 
@@ -212,6 +336,7 @@ section {
     @media (max-width: $md) {
       margin: 0 auto;
       margin-bottom: 15px;
+      margin-top: 30px;
     }
   }
 
