@@ -1,1 +1,53 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42 42"><defs><style>.cls-1{fill:#989898;}</style></defs><title>Asset 1</title><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><rect class="cls-1" width="42" height="42"/></g></g></svg>
+<svg id="Group_316" data-name="Group 316" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 382 76">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #333;
+      }
+
+      .cls-2 {
+        fill: url(#radial-gradient);
+      }
+
+      .cls-3 {
+        fill: url(#radial-gradient-2);
+      }
+
+      .cls-4 {
+        fill: url(#radial-gradient-3);
+      }
+
+      .cls-5 {
+        font-size: 30px;
+        font-family: Helvetica;
+      }
+    </style>
+    <radialGradient id="radial-gradient" cx="110.906" cy="102.409" r="3.888" gradientTransform="translate(-1.076 -1.1) scale(1.234 1.234)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#130c0e" stop-opacity="0.949"/>
+      <stop offset="0.6" stop-color="#130c0e" stop-opacity="0.651"/>
+      <stop offset="1" stop-color="#130c0e" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="radial-gradient-2" cx="67.162" cy="9.693" r="13.996" gradientTransform="translate(3.462 0.481) scale(0.56 0.56)" xlink:href="#radial-gradient"/>
+    <radialGradient id="radial-gradient-3" cx="75.402" cy="71.699" r="6.762" gradientTransform="translate(-0.515 -6.221) scale(1.571 1.571)" xlink:href="#radial-gradient"/>
+  </defs>
+  <g id="Group_314" data-name="Group 314" transform="translate(0 0)">
+    <path id="Path_112" data-name="Path 112" class="cls-1" d="M34.091,8.6A34.091,34.091,0,1,0,68.182,42.691,34.129,34.129,0,0,0,34.091,8.6Zm1.021,14.693a19.4,19.4,0,0,1,18.377,19.4c0,.533-.044,1.065-.089,1.6a10.333,10.333,0,0,0-1.687-.178A8.762,8.762,0,0,0,44.7,47.663l-9.588-5.549ZM45.5,50.459,50.382,53.3a18.991,18.991,0,0,1-3.64,4.128,6.714,6.714,0,0,1-1.731-4.483A6.365,6.365,0,0,1,45.5,50.459Zm9.588-3.418A6.742,6.742,0,1,1,48.34,58.716,21.5,21.5,0,0,0,55.088,47.041ZM51.4,51.525,46.52,48.684a6.74,6.74,0,0,1,5.282-2.53,7.692,7.692,0,0,1,1.42.133A22.848,22.848,0,0,1,51.4,51.525Zm-7.679-2.086a9.159,9.159,0,0,0-.71,3.507,8.681,8.681,0,0,0,2.131,5.726A19.406,19.406,0,1,1,33.07,23.337v19.4h1.021l-.488.888ZM34.091,74.785A32.079,32.079,0,0,1,33.07,10.642V21.3a21.43,21.43,0,0,0,1.021,42.836,21.153,21.153,0,0,0,12.562-4.084,8.79,8.79,0,1,0,8.789-15.137,18.612,18.612,0,0,0,.133-2.219A21.426,21.426,0,0,0,35.157,21.3V10.642a32.079,32.079,0,0,1-1.065,64.143Z" transform="translate(0 -4.782)"/>
+    <g id="Group_309" data-name="Group 309" transform="translate(26.323 3.818)">
+      <path id="Path_113" data-name="Path 113" class="cls-2" d="M107.277,105.646a4.369,4.369,0,0,0,1.642,1.2,21.029,21.029,0,0,0,4.794-8.3,5.476,5.476,0,0,0-1.864-.843,21.7,21.7,0,0,1-1.332,3.329l-3.2-1.864A5.251,5.251,0,0,0,106.3,100.9l3.2,1.864A20.7,20.7,0,0,1,107.277,105.646Z" transform="translate(-85.437 -58.149)"/>
+      <path id="Path_114" data-name="Path 114" class="cls-3" d="M59.3,9.488v.089a6.837,6.837,0,0,0,.266,1.909,34.507,34.507,0,0,1,6.525-.888v6.658a7.286,7.286,0,0,0,1.021.089,7.925,7.925,0,0,0,1.021-.089V10.6a32.079,32.079,0,0,1,6.525.888,6.837,6.837,0,0,0,.266-1.909V9.488A34.442,34.442,0,0,0,67.157,8.6,34.935,34.935,0,0,0,59.3,9.488Z" transform="translate(-59.3 -8.6)"/>
+      <path id="Path_115" data-name="Path 115" class="cls-4" d="M75.521,60.8a7.858,7.858,0,0,0-1.021.044V71.72h1.021l-.488.888,9.411,5.416a13.618,13.618,0,0,0,1.021-1.731l-8.878-5.149V60.889A8.62,8.62,0,0,0,75.521,60.8Z" transform="translate(-67.753 -37.629)"/>
+    </g>
+    <g id="Group_313" data-name="Group 313" transform="translate(26.323)">
+      <g id="Group_310" data-name="Group 310" transform="translate(22.461 45.144)">
+        <ellipse id="Ellipse_23" data-name="Ellipse 23" class="cls-1" cx="2.974" cy="2.974" rx="2.974" ry="2.974"/>
+      </g>
+      <g id="Group_311" data-name="Group 311" transform="translate(2.93)">
+        <ellipse id="Ellipse_24" data-name="Ellipse 24" class="cls-1" cx="4.838" cy="4.838" rx="4.838" ry="4.838"/>
+      </g>
+      <g id="Group_312" data-name="Group 312" transform="translate(0 30.141)">
+        <ellipse id="Ellipse_25" data-name="Ellipse 25" class="cls-1" cx="7.768" cy="7.768" rx="7.768" ry="7.768"/>
+      </g>
+    </g>
+  </g>
+  <text id="TIMESERVER" class="cls-5" transform="translate(77 21)"><tspan x="0" y="23">TIMESERVER</tspan></text>
+</svg>
