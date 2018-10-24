@@ -314,18 +314,18 @@ section {
   // padding-bottom: 35px;
 
   &__logo {
-    width: 300px;
+    max-width: 300px;
 
     @media (max-width: $md) {
       margin: 0 auto;
       margin-bottom: 15px;
-      width: 220px;
+      // width: 220px;
     }
 
     img {
       width: 100%;
       @media (max-width: $md) {
-        width: 300px;
+        // width: 300px;
       }
     }
   }
@@ -337,6 +337,10 @@ section {
       margin: 0 auto;
       margin-bottom: 15px;
       margin-top: 30px;
+    }
+
+    & > * {
+      cursor: pointer;
     }
   }
 

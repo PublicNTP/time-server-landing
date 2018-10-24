@@ -228,17 +228,13 @@ section {
   background-color: transparent;
   padding: 15px 30px; }
   .footer__logo {
-    width: 300px; }
+    max-width: 300px; }
     @media (max-width: 768px) {
       .footer__logo {
         margin: 0 auto;
-        margin-bottom: 15px;
-        width: 220px; } }
+        margin-bottom: 15px; } }
     .footer__logo img {
       width: 100%; }
-      @media (max-width: 768px) {
-        .footer__logo img {
-          width: 300px; } }
   .footer__social {
     width: 150px; }
     @media (max-width: 768px) {
@@ -246,6 +242,8 @@ section {
         margin: 0 auto;
         margin-bottom: 15px;
         margin-top: 30px; } }
+    .footer__social > * {
+      cursor: pointer; }
   .footer__list {
     display: flex;
     justify-content: center;
