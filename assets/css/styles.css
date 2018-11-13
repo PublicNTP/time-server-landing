@@ -19,6 +19,10 @@ section {
   position: relative;
   padding: 30px; }
 
+.site-container {
+  max-width: 1440px;
+  margin: 0 auto; }
+
 .nav__white {
   background-color: white;
   padding: 40px; }
@@ -53,13 +57,13 @@ section {
   position: relative;
   bottom: -70px; }
   .phone__image {
-    width: 200px;
+    height: 350px;
     z-index: 1; }
     @media (max-width: 700px) {
       .phone__image {
         width: unset; } }
     .phone__image img {
-      width: 100%; }
+      height: 100%; }
 
 .cta {
   background-color: white;
@@ -262,3 +266,17 @@ section {
 
 .fa {
   color: white; }
+
+.play-store {
+  margin: 0 50px; }
+  @media (max-width: 750px) {
+    .play-store {
+      margin: unset; } }
+
+.osi {
+  max-width: 200px; }
+  @media (max-width: 750px) {
+    .osi {
+      max-width: 100px; } }
+  .osi a img {
+    width: 100%; }

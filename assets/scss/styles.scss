@@ -28,6 +28,11 @@ section {
   padding: 30px;
 }
 
+.site-container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
 .nav {
 
   &__white {
@@ -79,7 +84,8 @@ section {
   bottom: -70px;
 
   &__image {
-    width: 200px;
+    // width: 200px;
+    height: 350px;
     z-index: 1;
 
     @media (max-width: 700px) {
@@ -87,7 +93,8 @@ section {
     }
 
     img {
-      width: 100%;
+      // width: 100%;
+      height: 100%;
     }
   }
 }
@@ -371,4 +378,24 @@ section {
 
 .fa {
   color: white;
+}
+
+.play-store {
+  margin: 0 50px;
+
+  @media (max-width: 750px) {
+    margin: unset;
+  }
+}
+
+.osi {
+  max-width: 200px;
+
+  @media (max-width: 750px) {
+    max-width: 100px;
+  }
+
+  a img {
+    width: 100%;
+  }
 }
