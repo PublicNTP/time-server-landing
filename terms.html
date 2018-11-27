@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Time Server App</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,900" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="shortcut icon" type="image/png" href="./assets/img/favicon.png">
+  <link rel="icon" type="image/x-icon" href="./assets/img/favicon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="150x150" href="./assets/img/mstile-150x150.png">
+  <link rel="manifest" href="./assets/img/site.webmanifest">
+  <link rel="icon" type="image/png" sizes="192x192" href="./assets/img/android-chrome-192x192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="./assets/img/android-chrome-512x512.png">
+  <link rel="mask-icon" href="./assets/img/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#2d89ef">
+  <meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+  <div class="site-container">
+    <nav class="navbar navbar-expand-lg navbar-light nav__white">
+      <a class="navbar-brand" href="index.html">
+        <img src="assets/img/safari-pinned-tab.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+        TIMESERVER
+      </a>
+      <button class="nav__mobile" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="nav navbar-nav ml-auto">
+          <!-- <li class="nav-item nav-item--github">
+          <a class="nav-link" href="https://github.com/PublicNTP/time-server-app#readme" target="_blank"><img src="assets/img/GitHub-Mark-120px-plus.png"></a>
+        </li> -->
+          <li class="nav-item">
+            <a class="nav-link" href="#app">Get The App</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://timeserver.app/#features">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://github.com/PublicNTP/time-server-app/wiki">Wiki</a>
+          </li>
+          <li class="nav-item">
+            <a href="https://github.com/PublicNTP/time-server-app">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120.78 117.79" alt="Github Logo">
+              <title>Github</title>
+                <path class="dark-hover" d="M60.39,0A60.39,60.39,0,0,0,41.3,117.69c3,.56,4.12-1.31,4.12-2.91,0-1.44-.05-6.19-.08-11.24C28.54,107.19,25,96.42,25,96.42c-2.75-7-6.71-8.84-6.71-8.84-5.48-3.75.41-3.67.41-3.67,6.07.43,9.26,6.22,9.26,6.22,5.39,9.23,14.13,6.57,17.57,5,.55-3.9,2.11-6.56,3.84-8.07C36,85.55,21.85,80.37,21.85,57.23A23.35,23.35,0,0,1,28.08,41c-.63-1.52-2.7-7.66.58-16,0,0,5.07-1.62,16.61,6.19a57.36,57.36,0,0,1,30.25,0C87,23.42,92.11,25,92.11,25c3.28,8.32,1.22,14.46.59,16a23.34,23.34,0,0,1,6.21,16.21c0,23.2-14.12,28.3-27.57,29.8,2.16,1.87,4.09,5.55,4.09,11.18,0,8.08-.06,14.59-.06,16.57,0,1.61,1.08,3.49,4.14,2.9A60.39,60.39,0,0,0,60.39,0Z"/>
+            </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  <section class="terms clearfix">
+    <div class="home__section">
+      <h1 class="home__title">Bring Time to the World</h1>
+      <p class="home__sub-title">Updated August 1, 2017</p>
+    </div>
+
+    <div class="home__section">
+      <div class="terms__title">ARTICLE 1 DEFINITIONS</div>
+      <p class="terms__text terms__indent">PublicNTP, Inc. (“PublicNTP”) is a Non-Profit entity with a principal place of business located at:</p>
+      <p class="">1405 S Fern St #90372 <br>Arlington VA 22202-2810</p><br>
+      <p class="terms__text terms__indent">Public NTP has created a timekeeping service (“SERVICE”) that is the source of these Terms of Service.</p>
+      <p class="terms__text terms__indent">By using this SERVICE, YOU agree to the following terms and conditions of use.</p>
+
+      <div class="terms__title">ARTICLE 2 GRANT OF LICENSE</div>
+      <p class="terms__text">This SERVICE, if legally executed as defined herein, licenses and so grants YOU the following rights:</p>
+      <p class="terms__text">SERVICE: YOU may use this SERVICE an unlimited number of times.</p>
+      <p class="terms__text">YOU agree to use the SERVICE only for purposes that are permitted by (a) the Terms and Conditions and (b) any applicable
+        law, regulation or generally accepted practices or guidelines in the relevant jurisdictions (including, but not limited to,
+        any laws regarding Consumer Privacy, Intellectual Property and the export of data or SERVICE to and from the United States
+        or other relevant countries).</p>
+
+      <div class="terms__title">ARTICLE 3 DELIVERY</div>
+      <p class="terms__text">The SERVICE shall be made available to YOU electronically. By accepting its use upon the first time, YOU freely acknowledge
+        and accept these Terms and Conditions.</p>
+
+      <div class="terms__title">ARTICLE 4 RESTRICTIONS</div>
+      <p class="terms__text">YOU acknowledge and agree that the title to and ownership of the SERVICE and the intellectual property rights associated
+        therewith are and remain the sole and exclusive property of PublicNTP and agents and/or licensors. Because PublicNTP’s mission
+        is to expand NTP servers around the world, PublicNTP grants YOU a revocable license to allow modification of any open source
+        applications and inclusion of the SERVICE in YOUR application.</p>
+
+      <div class="terms__title">ARTICLE 5 DISCLAIMER OF WARRANTIES</div>
+      <p class="terms__text">YOU expressly acknowledge and agree that use of the SERVICE is at YOUR sole risk.</p>
+      <p class="terms__text">The SERVICE, and source code are provided "AS IS”, and on a best- effort basis, without warranty of any kind. PublicNTP does
+        not, either expressed, implied or statutory, make any warranties, claims or representations with respect to the SERVICE,
+        including, without limitation, warranties of quality, performance, merchantability, or fitness of use for a particular purpose,
+        to the fullest extent allowable by law, unless explicitly stated otherwise in these Terms and Conditions.</p>
+      <p class="terms__text">YOU acknowledge that the quality of SERVICE may be affected by factors beyond PublicNTP’s control, including without limitation,
+        improper network/server configurations, user error, and malicious third-party behavior.</p>
+      <p class="terms__text">PublicNTP further does not represent or warrant that the SERVICE will always function uninterrupted or error-free. PublicNTP
+        makes no warranty of limitations of service downtime or server availability.</p>
+      <p class="terms__text">No oral or written information or advice given by PublicNTP or by any of its representatives, agents or resellers shall create
+        a warranty.</p>
+      <p class="terms__text">Because the SERVICE is offered free of charge, PublicNTP retains the right to deny YOU service at any time for any reason.
+        If YOU request the service from the same IP address more frequently than every five (5) minutes, YOUR request will be denied.</p>
+      <p class="terms__text">As some jurisdictions do not allow some of the exclusions or limitations as set forth above, some of these exclusions or
+        limitations may not apply to YOU. If that is the case, the disclaimer of warranties shall be issued TO THE MAXIMUM EXTENT
+        PERMISSIBLE BY APPLICABLE AND/OR EXISTING LAW.</p>
+
+      <div class="terms__title">ARTICLE 6 LIMITATION OF LIABILITY</div>
+      <p class="terms__text">In no event shall PublicNTP be liable for any indirect, incidental, punitive, or consequential damages due to any possible
+        inefficacy or deficiency in the quality of the SERVICE.</p>
+      <p class="terms__text">In all other events, PublicNTP shall not be liable for any loss, damage, injury (including, to the full extent permitted
+        by law and no further, personal injury or death), demand or expense, direct or indirect, resulting from any act or omission
+        that can be attributed to PublicNTP, its directors, employees, agents, or any other cause and arising out of or in connection
+        with the use of the SERVICE even if PublicNTP, its directors, employees, agents or resellers, have been advised of the
+        possibility of such damages, arising out of the use, misuse, or inability to use the SERVICE.</p>
+      <p class="terms__text">While it may be foreseeable that an inability to properly keep precise time may lead to consequential damages if incorporated
+        into a computer system, representations of the precision of the service are AS IS and provided on a best effort basis, and
+        any consequential and/or incidental damage resulting from lack of precision time is TOTALLY DISCLAIMED.</p>
+      <p class="terms__text">As some jurisdictions do not allow limitations of liability as set forth above, some of these exclusions or limitations may
+        not apply to YOU. If that is the case, the disclaimer of warranties shall be issued TO THE MAXIMUM EXTENT PERMISSIBLE BY
+        APPLICABLE AND/OR EXISTING LAW.</p>
+
+      <div class="terms__title">ARTICLE 7 THIRD PARTY SERVICE</div>
+      <p class="terms__text">YOU acknowledge and agree that the SERVICE interacts with Third Party Software, the operating system on its hosting servers,
+        and the Internet. Title and ownership of Third Party Software and the intellectual property rights associated therewith are
+        and remain the sole and exclusively property of the respective third party. PublicNTP makes no representations and warranties
+        concerning the efficacy and functionality of the operating system on its hosting servers or any potential open source modifications
+        made to YOUR operating system</p>
+
+      <div class="terms__title">ARTICLE 8 REPRESENTATIONS OF PRIVACY</div>
+      <p class="terms__text">PublicNTP warrants that the consumer information that is collected is limited to YOUR Name and Email Address. Furthermore,
+        PublicNTP warrants it does not: (a) collect or "screen-scrape" any information found on your electronic device (b) collect
+        or report back to PublicNTP any data regarding YOUR computer keystrokes or other data unrelated to the value the SERVICE
+        provides. PublicNTP further warrants it does not sell YOUR consumer proprietary information, nor does PublicNTP distribute
+        your consumer proprietary information to any third parties for any purposes other than to maximize the function and efficiency
+        of SERVICE.</p>
+      <p class="terms__text">PublicNTP does keep Internet logs for the purpose of monitoring the level of service provided. Such logs do contain Internet
+        Protocol (“IP”) address of its users. PublicNTP warrants that such user IP information shall not be shared with any third-party
+        unless required by subpoena, judicial warrant or other legally authorized administrative and/or judicial process, or on an
+        aggregated basis solely for the purpose of improving efficiency.</p>
+      <p class="terms__text">In cases where YOU may decide to donate money to PublicNTP, PublicNTP is required to track donor identities, donor amounts,
+        and dates of donations in a manner required by all donors to any non-profit entity designated by section 501(c)(3) of the
+        United States Internal Revenue Code. PublicNTP warrants that in such an event, data collected is not sold or shared with
+        any other party.</p>
+
+      <!-- <div class="terms__title">ARTICLE 9</div>
+      <p class="terms__text"></p> -->
+
+      <div class="terms__title">ARTICLE 10 SEVERABILITY</div>
+      <p class="terms__text">If any term or provision of this SERVICE shall be found to be illegal or unenforceable, then, notwithstanding that term,
+        all other terms of this SERVICE shall remain in full force and effect and parties shall substitute for the affected term
+        or provision an enforceable term or provision which approximates the intent and economic effect of the affected provision.</p>
+
+      <div class="terms__title">ARTICLE 11 WAIVER</div>
+      <p class="terms__text">The failure by PublicNTP to exercise any right hereunder shall not operate as a waiver of PublicNTP’s rights to exercise
+        such right or any other right in the future.</p>
+
+      <div class="terms__title">ARTICLE 12 CHOICE OF LAW</div>
+      <p class="terms__text">The laws of the Commonwealth of Virginia shall govern this SERVICE in all respects.</p>
+
+      <div class="terms__title">ARTICLE 13 MODIFICATIONS</div>
+      <p class="terms__text">Public NTP may, in its sole discretion, modify or replace these Terms and Conditions at any time. YOUR continued use of the
+        Services following a change to these Terms and Conditions shall constitute acceptance of such changes.</p>
+
+      <div class="terms__title">ARTICLE 14 TOTAL INTEGRATION</div>
+      <p class="terms__text">These Terms and Conditions represent the total sum of agreement between the parties with respect to use of the SERVICE, and
+        any modifications of these Terms and Conditions shall only occur by mutual subsequent written agreement between YOU and PublicNTP.</p>
+
+      <div class="terms__text terms__footer">By using this SERVICE, you agree to the Terms and Conditions specified herein.</div>
+
+    </div>
+  </section>
+  <section class="download d-flex flex-column justify-content-center">
+
+    <footer class="footer d-block d-md-flex justify-content-around">
+      <div class="footer-logo-col">
+        <h3>Other Great Sites</h3>
+        <div class="pntp"><a href="https://pntp.org"><img src="assets/img/pntp_logo.png" alt="PNTP"></a></div>
+        <div class="osi"><a href="https://opensource.org/"><img src="assets/img/osi_logo.png" alt="OSI"></a></div>
+
+      </div>
+
+      <div class="footer-contact-col">
+          <h3>Contact Info</h3>
+          <div class="contact-info">
+            PublicNTP, Inc.</br>
+            1405 S Fern St #90372</br>
+            Arlington VA 22202-2810</br>
+            +1 (703) 651-2996
+          </div>
+      </div>
+
+      <div class="footer__social">
+        <h3>Learn how you can connect and help, or follow us on LinkedIn.</h3>
+        <div class="cta__btn__lined"><a href="mailto:contact@publicntp.org ">Connnect</a></div>
+        <div class="footer__social__svg">
+          <a href="https://linkedin.com/company/publicntp/">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28" alt="LinkedIn Logo" >
+            <title>LinkedIn</title>
+            <path class="light-hover" d="M26.25,0H1.75A1.653,1.653,0,0,0,0,1.75v24.5A1.653,1.653,0,0,0,1.75,28h24.5A1.653,1.653,0,0,0,28,26.25V1.75A1.653,1.653,0,0,0,26.25,0ZM23.975,22.75H19.95v-6.3c0-1.575-.525-2.625-1.925-2.625a2.363,2.363,0,0,0-2.1,1.4c.175.175,0,.525,0,.875v6.65H11.9V10.675h4.025v1.75a3.677,3.677,0,0,1,3.5-1.925c2.625,0,4.375,2.1,4.375,5.6l.175,6.65ZM7.175,5.25A1.887,1.887,0,0,1,9.1,7.35a1.98,1.98,0,0,1-1.925,2.1h0A1.887,1.887,0,0,1,5.25,7.35,1.8,1.8,0,0,1,7.175,5.25Zm2.1,5.425V22.75H5.25V10.675Z"/>
+          </svg>
+          </a>
+        </div>
+        <div class="footer__social__svg">
+          <a href="https://github.com/PublicNTP/time-server-app">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120.78 117.79" alt="Github Logo">
+            <title>Github</title>
+              <path class="light-hover" d="M60.39,0A60.39,60.39,0,0,0,41.3,117.69c3,.56,4.12-1.31,4.12-2.91,0-1.44-.05-6.19-.08-11.24C28.54,107.19,25,96.42,25,96.42c-2.75-7-6.71-8.84-6.71-8.84-5.48-3.75.41-3.67.41-3.67,6.07.43,9.26,6.22,9.26,6.22,5.39,9.23,14.13,6.57,17.57,5,.55-3.9,2.11-6.56,3.84-8.07C36,85.55,21.85,80.37,21.85,57.23A23.35,23.35,0,0,1,28.08,41c-.63-1.52-2.7-7.66.58-16,0,0,5.07-1.62,16.61,6.19a57.36,57.36,0,0,1,30.25,0C87,23.42,92.11,25,92.11,25c3.28,8.32,1.22,14.46.59,16a23.34,23.34,0,0,1,6.21,16.21c0,23.2-14.12,28.3-27.57,29.8,2.16,1.87,4.09,5.55,4.09,11.18,0,8.08-.06,14.59-.06,16.57,0,1.61,1.08,3.49,4.14,2.9A60.39,60.39,0,0,0,60.39,0Z"/>
+          </svg>
+          </a>
+        </div>
+        <p><a href="/terms.html">Terms & Conditions</a></p>
+        <p>Copyright 2018 PublicNTP, Inc.</p>
+      </div>
+    </footer>
+
+  </section>
+</div>
+</body>
+
+</html>
