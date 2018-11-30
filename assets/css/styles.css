@@ -186,6 +186,7 @@ section {
   bottom: -70px; }
   .phone__image {
     height: 589px;
+    width: 344px;
     z-index: 1; }
     .phone__image img {
       max-height: 589px; }
@@ -197,8 +198,10 @@ section {
       height: 78%;
       transform: translateX(-50%); }
     .phone__image__small {
-      height: 340px; }
+      height: 340px;
+      width: auto; }
       .phone__image__small img {
+        width: auto;
         max-height: 100%; }
 
 .cta {

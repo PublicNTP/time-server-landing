@@ -238,6 +238,7 @@ section {
   &__image {
     // width: 200px;
     height: 589px;
+    width:344px;
     z-index: 1;
 
     img {
@@ -253,7 +254,9 @@ section {
     }
     &__small{
       height:340px;
+      width:auto;
       img{
+        width:auto;
         max-height: 100%;
       }
     }
