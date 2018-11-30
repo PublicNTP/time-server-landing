@@ -23,7 +23,7 @@ section {
   padding: 30px; }
 
 .site-container {
-  max-width: 1440px;
+  max-width: 1200px;
   margin: 0 auto; }
 
 .nav__white {
@@ -54,6 +54,85 @@ section {
 .nav-link {
   font-size: 12px;
   text-transform: uppercase; }
+
+.nav-toggle {
+  cursor: pointer;
+  transition: transform 300ms ease; }
+  .nav-toggle:focus {
+    outline: none; }
+  .nav-toggle[aria-expanded="true"] {
+    transform: rotateZ(180deg) scale(0); }
+
+.nav__mobile:focus {
+  outline: none; }
+
+@media (max-width: 990px) {
+  .navbar-collapse {
+    display: block !important;
+    position: absolute;
+    width: 100%;
+    max-width: 300px;
+    right: -300px;
+    top: 0;
+    height: 100vh;
+    z-index: 200;
+    transition: right 300ms ease; }
+    .navbar-collapse.collapsing {
+      display: block !important;
+      position: absolute;
+      width: 100%;
+      top: 0;
+      right: 0;
+      height: auto;
+      overflow: auto;
+      transition: none; }
+    .navbar-collapse li.nav-item a.nav-link {
+      color: #fff;
+      display: block;
+      float: right;
+      text-align: right;
+      width: 100%;
+      font-size: 13px;
+      padding: 20px 15px;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: #fff;
+      border-bottom: 1px solid transparent; }
+      .navbar-collapse li.nav-item a.nav-link:hover, .navbar-collapse li.nav-item a.nav-link:focus {
+        color: #fff;
+        border-bottom: 1px solid #fff; }
+    .navbar-collapse .nav-item svg {
+      display: block;
+      float: right;
+      margin: 20px 15px;
+      fill: #BEBFBE; }
+      .navbar-collapse .nav-item svg:hover, .navbar-collapse .nav-item svg:focus {
+        fill: #fff; }
+    .navbar-collapse .close-navbar {
+      height: 30px;
+      width: 30px;
+      float: right;
+      margin: 20px 15px;
+      cursor: pointer; }
+      .navbar-collapse .close-navbar:focus {
+        outline: none; }
+    .navbar-collapse .navbar-nav {
+      width: 100%;
+      max-width: 300px;
+      position: absolute;
+      right: -300px;
+      top: 0;
+      padding: 0px 10px;
+      height: 100vh;
+      background: #2a2a2a;
+      z-index: 200;
+      transition: right 300ms ease; }
+    .navbar-collapse.show {
+      right: 0;
+      transition: right 300ms ease; }
+      .navbar-collapse.show .navbar-nav {
+        right: 0;
+        transition: right 300ms ease; } }
 
 .half {
   width: 50%;
@@ -106,17 +185,21 @@ section {
   position: relative;
   bottom: -70px; }
   .phone__image {
-    height: 350px;
+    height: 589px;
     z-index: 1; }
     .phone__image img {
-      height: 100%; }
+      max-height: 589px; }
     .phone__image video {
       position: absolute;
       top: 70px;
-      left: 50%;
+      left: 49.75%;
       width: 306px;
       height: 78%;
       transform: translateX(-50%); }
+    .phone__image__small {
+      height: 340px; }
+      .phone__image__small img {
+        max-height: 100%; }
 
 .cta {
   background-color: white;
@@ -167,13 +250,7 @@ section {
     font-weight: 500; }
     @media (max-width: 768px) {
       .cta__text {
-        width: 50%;
-        display: inline-block;
-        vertical-align: middle; } }
-    @media (max-width: 400px) {
-      .cta__text {
-        width: 100%;
-        display: block; } }
+        width: 100%; } }
   .cta__btn {
     color: white;
     padding: 10px 25px;
@@ -186,10 +263,6 @@ section {
     display: inline-block; }
     .cta__btn a {
       color: #fff; }
-    @media (max-width: 768px) {
-      .cta__btn {
-        margin: 0 auto;
-        float: right; } }
 
 .info {
   background-color: transparent;
@@ -199,7 +272,6 @@ section {
   z-index: 0; }
   .info__overlay {
     position: absolute;
-    top: 290px;
     right: 0;
     left: 0;
     bottom: 0;
@@ -257,7 +329,8 @@ section {
     margin-bottom: 50px;
     width: 100%; }
   .features__wrapper {
-    max-width: 250px; }
+    max-width: 250px;
+    z-index: 1; }
     @media (max-width: 768px) {
       .features__wrapper {
         margin: 0;
@@ -266,12 +339,12 @@ section {
         display: block !important;
         z-index: 1;
         position: relative; }
-        .features__wrapper .phone__image {
+        .features__wrapper .phone__image__small {
           width: 48%;
           display: inline-block;
           vertical-align: bottom;
           height: auto; }
-          .features__wrapper .phone__image img {
+          .features__wrapper .phone__image__small img {
             width: 100%;
             height: auto; } }
   .features__headline {
