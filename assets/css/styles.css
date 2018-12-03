@@ -466,14 +466,14 @@ section {
     .footer__social__svg {
       width: 40px;
       height: 40px;
-      margin: 0 10px;
+      margin: 0 5px;
       display: inline-block;
       vertical-align: middle; }
       .footer__social__svg .Amazon_rect {
         fill: #fff;
         transition: 200ms;
         transition-timing-function: ease-in-out; }
-      .footer__social__svg .Amazon_a, .footer__social__svg .linkedin_rect {
+      .footer__social__svg .Amazon_a, .footer__social__svg .linkedin_rect, .footer__social__svg .github_circle {
         fill: #575656;
         transition: 200ms;
         transition-timing-function: ease-in-out; }
@@ -482,6 +482,10 @@ section {
         transition-timing-function: ease-in-out; }
       .footer__social__svg .linkedin_rect {
         transform: translate(2px, 2px); }
+      .footer__social__svg .github_path {
+        fill: #fff;
+        transition: 200ms;
+        transition-timing-function: ease-in-out; }
       .footer__social__svg svg {
         width: 100%;
         fill: #fff;
@@ -493,10 +497,12 @@ section {
           transition-timing-function: ease-in-out; }
           .footer__social__svg svg:hover .Amazon_rect {
             fill: #FE9900; }
-          .footer__social__svg svg:hover .Amazon_a, .footer__social__svg svg:hover .linkedin_rect {
+          .footer__social__svg svg:hover .Amazon_a, .footer__social__svg svg:hover .linkedin_rect, .footer__social__svg svg:hover .github_circle {
             fill: #fff; }
           .footer__social__svg svg:hover .linkedin {
             fill: #0077B5; }
+          .footer__social__svg svg:hover .github_path {
+            fill: #4078c0; }
   .footer__list {
     display: flex;
     justify-content: center;
@@ -521,7 +527,15 @@ section {
     cursor: pointer;
     border-radius: 4px;
     display: inline-block;
-    vertical-align: middle; }
+    vertical-align: middle;
+    transition: background 300ms ease; }
+    .footer .cta__btn__lined a {
+      transition: color 300ms ease; }
+    .footer .cta__btn__lined:hover {
+      background: #fff;
+      border-color: #fff; }
+      .footer .cta__btn__lined:hover a {
+        color: #575656; }
 
 .fa {
   color: white; }

@@ -613,7 +613,7 @@ section {
     &__svg{
       width:40px;
       height:40px;
-      margin:0 10px;
+      margin:0 5px;
       display: inline-block;
       vertical-align: middle;
       .Amazon_rect,{
@@ -621,7 +621,7 @@ section {
         transition: 200ms;
         transition-timing-function: ease-in-out;
       }
-      .Amazon_a, .linkedin_rect{
+      .Amazon_a, .linkedin_rect, .github_circle{
         fill: #575656;
         transition: 200ms;
         transition-timing-function: ease-in-out;
@@ -633,6 +633,12 @@ section {
       .linkedin_rect{
         transform:translate(2px, 2px);
       }
+      .github_path{
+        fill:#fff;
+        transition: 200ms;
+        transition-timing-function: ease-in-out;
+      }
+
       svg{
         width:100%;
         fill:#fff;
@@ -645,12 +651,14 @@ section {
           .Amazon_rect{
             fill:#FE9900;
           }
-          .Amazon_a, .linkedin_rect{
+          .Amazon_a, .linkedin_rect, .github_circle{
             fill: #fff;
           }
           .linkedin{
             fill:#0077B5;
-
+          }
+          .github_path{
+            fill:#4078c0;
           }
         }
       }
@@ -691,6 +699,17 @@ section {
     border-radius: 4px;
     display:inline-block;
     vertical-align: middle;
+    transition:background 300ms ease;
+    a{
+      transition:color 300ms ease;
+    }
+    &:hover{
+        background: #fff;
+        border-color:#fff;
+        a{
+          color:#575656;
+        }
+    }
   }
 }
 
