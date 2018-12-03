@@ -237,8 +237,8 @@ section {
       padding: 15px; } }
   .cta__headline {
     color: #75797C;
-    font-size: 90px;
-    line-height: 90px;
+    font-size: 78px;
+    line-height: 80px;
     font-weight: 900;
     margin-bottom: 30px; }
     @media (max-width: 1080px) {
@@ -332,7 +332,7 @@ section {
     margin-bottom: 50px;
     width: 100%; }
   .features__wrapper {
-    max-width: 250px;
+    max-width: 300px;
     z-index: 1; }
     @media (max-width: 768px) {
       .features__wrapper {
@@ -345,7 +345,7 @@ section {
         .features__wrapper .phone__image__small {
           width: 48%;
           display: inline-block;
-          vertical-align: bottom;
+          vertical-align: middle;
           height: auto; }
           .features__wrapper .phone__image__small img {
             width: 100%;
@@ -365,7 +365,7 @@ section {
         font-size: 14px;
         width: 50%;
         display: inline-block;
-        vertical-align: bottom;
+        vertical-align: middle;
         text-align: left; } }
 
 .download {
@@ -469,6 +469,19 @@ section {
       margin: 0 10px;
       display: inline-block;
       vertical-align: middle; }
+      .footer__social__svg .Amazon_rect {
+        fill: #fff;
+        transition: 200ms;
+        transition-timing-function: ease-in-out; }
+      .footer__social__svg .Amazon_a, .footer__social__svg .linkedin_rect {
+        fill: #575656;
+        transition: 200ms;
+        transition-timing-function: ease-in-out; }
+      .footer__social__svg .linkedin {
+        transition: 200ms;
+        transition-timing-function: ease-in-out; }
+      .footer__social__svg .linkedin_rect {
+        transform: translate(2px, 2px); }
       .footer__social__svg svg {
         width: 100%;
         fill: #fff;
@@ -478,6 +491,12 @@ section {
           fill: #BEBFBE;
           transition: 200ms;
           transition-timing-function: ease-in-out; }
+          .footer__social__svg svg:hover .Amazon_rect {
+            fill: #FE9900; }
+          .footer__social__svg svg:hover .Amazon_a, .footer__social__svg svg:hover .linkedin_rect {
+            fill: #fff; }
+          .footer__social__svg svg:hover .linkedin {
+            fill: #0077B5; }
   .footer__list {
     display: flex;
     justify-content: center;

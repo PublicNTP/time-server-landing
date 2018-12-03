@@ -304,8 +304,8 @@ section {
 
   &__headline {
     color: $gray-title;
-    font-size: 90px;
-    line-height: 90px;
+    font-size: 78px;
+    line-height: 80px;
     font-weight: 900;
     margin-bottom: $spacer;
     @media (max-width: 1080px) {
@@ -434,7 +434,7 @@ section {
   }
 
   &__wrapper {
-    max-width: 250px;
+    max-width: 300px;
     z-index: 1;
     @media (max-width: $md) {
       margin: 0;
@@ -446,7 +446,7 @@ section {
       .phone__image__small{
         width:48%;
         display: inline-block;
-        vertical-align: bottom;
+        vertical-align: middle;
         height: auto;
         img{
           width: 100%;
@@ -472,7 +472,7 @@ section {
       font-size:14px;
       width:50%;
       display: inline-block;
-      vertical-align: bottom;
+      vertical-align: middle;
       text-align: left;
     }
   }
@@ -616,6 +616,23 @@ section {
       margin:0 10px;
       display: inline-block;
       vertical-align: middle;
+      .Amazon_rect,{
+        fill:#fff;
+        transition: 200ms;
+        transition-timing-function: ease-in-out;
+      }
+      .Amazon_a, .linkedin_rect{
+        fill: #575656;
+        transition: 200ms;
+        transition-timing-function: ease-in-out;
+      }
+      .linkedin{
+        transition: 200ms;
+        transition-timing-function: ease-in-out;
+      }
+      .linkedin_rect{
+        transform:translate(2px, 2px);
+      }
       svg{
         width:100%;
         fill:#fff;
@@ -625,8 +642,19 @@ section {
           fill:#BEBFBE;
           transition: 200ms;
           transition-timing-function: ease-in-out;
+          .Amazon_rect{
+            fill:#FE9900;
+          }
+          .Amazon_a, .linkedin_rect{
+            fill: #fff;
+          }
+          .linkedin{
+            fill:#0077B5;
+
+          }
         }
       }
+
     }
   }
 
