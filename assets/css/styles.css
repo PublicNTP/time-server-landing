@@ -445,6 +445,10 @@ section {
   .footer__social {
     width: 507px;
     text-align: right; }
+    .footer__social__wrapper {
+      display: inline-block;
+      width: 159px;
+      padding: 10px 0; }
     @media (max-width: 1060px) {
       .footer__social {
         width: 300px; } }
