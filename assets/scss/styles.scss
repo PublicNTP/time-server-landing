@@ -435,6 +435,7 @@ section {
 
   &__wrapper {
     max-width: 300px;
+    margin: 0 15px;
     z-index: 1;
     @media (max-width: $md) {
       margin: 0;
@@ -466,11 +467,13 @@ section {
   &__text {
     color: $gray-text;
     font-size: 18px;
+    margin-top:15px;
     margin-bottom: $gutter;
     text-align: center;
     @media (max-width: $md) {
       font-size:14px;
       width:50%;
+      margin-top:0;
       display: inline-block;
       vertical-align: middle;
       text-align: left;

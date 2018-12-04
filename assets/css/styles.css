@@ -333,6 +333,7 @@ section {
     width: 100%; }
   .features__wrapper {
     max-width: 300px;
+    margin: 0 15px;
     z-index: 1; }
     @media (max-width: 768px) {
       .features__wrapper {
@@ -358,12 +359,14 @@ section {
   .features__text {
     color: #575656;
     font-size: 18px;
+    margin-top: 15px;
     margin-bottom: 15px;
     text-align: center; }
     @media (max-width: 768px) {
       .features__text {
         font-size: 14px;
         width: 50%;
+        margin-top: 0;
         display: inline-block;
         vertical-align: middle;
         text-align: left; } }
