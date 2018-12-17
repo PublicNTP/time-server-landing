@@ -11,16 +11,26 @@ This page is built using:
 - [Node Package Manager](https://www.npmjs.com/get-npm)
 
 ## Credit
-- [PublicNTP, Inc.](https://publicntp.org)
-- [PXP](https://pxp200.com)
-- [Rooster Glue, Inc.](https://roosterglue.com)
-- [GPSTest Project](https://github.com/barbeau/gpstest/wiki)
-- [Zachary Neubert](https://github.com/ZacNeubert)
-- [Richard Macdonald](https://github.com/thewidgetsmith)
-- [Keltson Howell](https://keltsonhowell.com)
-- [Tod Robbins](https://github.com/todrobbins)
+
+### Individuals
+- [Alex Porter](https://github.com/TheAlexPorter)
+- [Brad Woodfin](https://github.com/woodfjo)
+- [Cam Peterson](https://github.com/campeterson)
 - [Cody Deskins](https://github.com/cdeskins)
+- [Dan Noland](https://github.com/nolandda)
 - [Eric Evans](https://github.com/Zipbug)
+- [Keltson Howell](https://keltsonhowell.com/)
+- [Micah Brown](https://github.com/Brnin8r)
+- [Scott Waddell](https://github.com/swaddell)
+- [Terry Ott](https://github.com/TerryOtt)
+- [Tod Robbins](https://github.com/todrobbins)
+- [Wylie Thomas](https://github.com/wyliethomas)
+
+### Organizations
+- [Pony Express Productions, LLC](https://pxp200.com/)
+- [PublicNTP, Inc.](https://publicntp.org/)
+- [Rooster Glue, Inc.](https://roosterglue.com/)
+- [Sixbucks Solutions, LLC](https://github.com/SixbucksSolutions)
 
 ## Legal
 `time-server-app` is copyrighted by [PublicNTP, Inc.](https://publicntp.org),
