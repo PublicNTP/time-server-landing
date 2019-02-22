@@ -1,6 +1,10 @@
 * {
   font-family: 'Montserrat', sans-serif; }
 
+body {
+  max-width: 100%;
+  overflow-x: hidden; }
+
 .navbar-expand-lg .navbar-nav .nav-link {
   padding-right: 1rem;
   padding-left: 1rem; }
