@@ -28,7 +28,8 @@ section {
 
 .site-container {
   max-width: 1200px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  overflow-x: hidden; }
 
 .nav__white {
   background-color: white;
